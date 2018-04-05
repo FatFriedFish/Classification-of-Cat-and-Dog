@@ -34,12 +34,3 @@ def bilinear_resize(img, m, n):
             resize[row, col] = (value[0], value[1], value[2])
     return resize
 
-#%%
-img = cv2.imread('cat.0.jpg')
-zoom = bilinear_resize(img, 400, 600)
-#%%
-cv2.imshow('resize', zoom)
-cv2.imshow('original', img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-#%%
