@@ -73,3 +73,29 @@ class CNN(nn.Module):
         output = self.fc(x)
         return output, x       
 ```
+## Training and Testing
+For this step, Adam algorithm was used as optimizer and Cross Entropy was used as loss function.
+
+```Python
+output, x = cnn(train_img)
+```
+Loss and Accuracy:
+```
+Epoch:  0 | train loss: 0.8168 | test accuracy: 0.52
+Epoch:  0 | train loss: 1.1687 | test accuracy: 0.73
+Epoch:  0 | train loss: 0.4911 | test accuracy: 0.73
+Epoch:  0 | train loss: 0.3334 | test accuracy: 0.79
+Epoch:  0 | train loss: 0.9466 | test accuracy: 0.77
+Epoch:  0 | train loss: 1.1205 | test accuracy: 0.77
+Epoch:  0 | train loss: 0.2019 | test accuracy: 0.69
+Epoch:  0 | train loss: 0.4600 | test accuracy: 0.80
+
+Epoch:  1 | train loss: 0.4341 | test accuracy: 0.80
+Epoch:  1 | train loss: 0.3583 | test accuracy: 0.84
+Epoch:  1 | train loss: 0.2107 | test accuracy: 0.81
+Epoch:  1 | train loss: 0.2020 | test accuracy: 0.88
+Epoch:  1 | train loss: 0.1999 | test accuracy: 0.87
+Epoch:  1 | train loss: 0.7345 | test accuracy: 0.87
+Epoch:  1 | train loss: 0.4867 | test accuracy: 0.89
+Epoch:  1 | train loss: 0.1586 | test accuracy: 0.92
+```
