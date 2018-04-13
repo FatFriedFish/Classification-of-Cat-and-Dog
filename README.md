@@ -99,3 +99,8 @@ Epoch:  1 | train loss: 0.7345 | test accuracy: 0.87
 Epoch:  1 | train loss: 0.4867 | test accuracy: 0.89
 Epoch:  1 | train loss: 0.1586 | test accuracy: 0.92
 ```
+```
+[1 1 0 1 1 0 1 1 1 1] prediction number
+[1 1 0 1 1 0 1 1 1 1] real number
+['dog', 'dog', 'cat', 'dog', 'dog']
+```
